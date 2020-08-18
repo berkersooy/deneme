@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <h1>Hoşgeldiniz {{request.user.get_username}} {{request.ip_address.get_username}}</h1>
+</head>
+
+<div class="card-footer">
+    {% for ip_address in userid.Ip_addresss.all %}
+        <p>
+            <span class="font-weight-bold">{{ ip_address }} &middot; </span>
+            {{ ip_address }}
+        </p>
+    {% endfor %}
+</div>
+
+
+<h1>proje {% for accounts in Ip_addresss.all %}
+    {{ ip_address }}
+{% endfor %}
+{{request.queryset.get_Ip_addresss}}
+devam
+etmiyor </h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Username</th>
+        <th scope="col"></th>
+        <th scope="col">Ip_addresss</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+</html>
